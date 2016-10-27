@@ -26,5 +26,14 @@ $(document).ready(function() {
     		$('#nav').css('display', 'none');
     	}
     });
+
+    $( window ).resize(function() {
+    	console.log($(document).width());
+    	if ($( document ).width() > 414) {
+   			$('#nav').css('display', 'block');
+    	} else {
+    		$('#nav').css('display', 'none');
+    	}
+	});
 });
 </script>
