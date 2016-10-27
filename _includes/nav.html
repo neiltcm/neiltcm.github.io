@@ -1,13 +1,13 @@
-<div id="header-container">
+<div id="nav-container">
 	<div id="name">
-		<p></p>
+		<p><a href="/">NEIL TSEA CHIN MING</a></p>
+		<i class="fa fa-chevron-right" aria-hidden="true"></i><p class="title">Software Engineer</p>
 	</div>
 	<div id="nav">
 		<ul>
-			<li><a href="../resume">RESUME</a></li>
-			<li><a href="../portfolio">PORTFOLIO</a></li>
-			<li><a href="../contact">CONTACT</a></li>
-			<li>test</li>
+			<li><a class="{% if page.url == '/resume' %}current{% endif %}" href="./resume">RESUME</a></li>
+			<li><a class="{% if page.url == '/portfolio' %}current{% endif %}" href="./portfolio">PORTFOLIO</a></li>
+			<li class="last {% if page.url == '/contact' %}current{% endif %}"><a href="./contact">CONTACT</a></li>
 		</ul>
 	</div> 
 </div> 
