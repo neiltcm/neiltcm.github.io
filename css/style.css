@@ -17,7 +17,11 @@ a {
 }
 
 li {
-	text-decoration: none;
+	list-style: none;
+}
+
+p {
+	margin: 10px 0 10px 0;
 }
 
 #footer {
@@ -83,10 +87,6 @@ li {
 	margin: 20px 0 0 0;
 }
 
-#projects {
-	margin: 40px 0 0 0;
-}
-
 .project {
 	margin: 0 0 50px 0;
 }
@@ -116,17 +116,22 @@ li {
 	top: 30%;
 }
 
-#github-link a:hover {
+#github-link a {
 	text-decoration: underline;
 }
 
+.page-content {
+	margin: 30px 0 0 0;
+}
+
 #phone, #email {
-	margin: 30px 0 30px 0;
+	margin: 0 0 30px 0;
 	position: relative;
 }
 
-#phone i, #email i {
-	width: 50px;
+.icon {
+	width: 40px;
+	vertical-align: middle;
 }
 
 #phone span, #email span {
@@ -150,6 +155,74 @@ li {
 	display: none;
 }
 
+.page-subcontent {
+	margin-top: 15px;
+}
+
+.page-subheader {
+	font-size: 19px;
+	font-weight: bold;
+}
+
+#work {
+	margin: 0 0 50px 0;
+}
+
+#degree > p {
+	margin: 0 0 4px 0;
+}
+
+#work > section, #academics > section {
+	clear: both;
+	display: block;
+	margin: 0 0 50px 0;
+}
+
+#academics .last {
+	margin-bottom: 0;
+}
+
+.icon-div-inline {
+	display: inline-block;
+}
+
+#courses li {
+	margin-bottom: 7px;
+}
+
+.work-experience {
+	margin: 10px 0 40px 0;
+}
+
+#pdf-version {
+	float: right;
+	margin-bottom: 30px;
+	width: 270px;
+	text-align: center;
+}
+
+#pdf-version > span {
+	margin-left: 10px;
+}
+
+.skill-section {
+	min-width: 200px;
+	margin: 0 20px 0 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.skill-section li {
+	margin: 4px 0 4px 0;
+}
+
+.skill-section > header {
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+/*********** MEDIA QUERIES ***********/
+
 @media (max-width: 1050px) {
 	#container {
 		width: 800px;
@@ -169,17 +242,39 @@ li {
 		margin: 20px 0 0 0;
 		width: 90%;
 	}
+
+	.skill-section {
+		min-width: 170px;
+	}
 }
 
 @media (max-width: 650px) {
 	#container {
 		width: 500px;
 	}
+
+	.skill-section {
+		margin: 0 0 30px 0;
+	}
+
+	.last-skill {
+		margin: 0;
+	}
 }
 
 @media (max-width: 550px) {
 	#container {
 		width: 450px;
+	}
+}
+
+@media (max-width: 500px) {
+	#container {
+		width: 415px;
+	}
+
+	.skill-section {
+		min-width: 150px;
 	}
 }
 

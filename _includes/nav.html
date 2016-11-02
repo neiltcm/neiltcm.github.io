@@ -1,7 +1,8 @@
 <div id="nav-container">
 	<div id="name">
+		<!--<p><a href="/">NEIL TSEA CHIN MING</a></p>-->
 		<p><a href="/">NEIL TSEA CHIN MING</a></p>
-		<i class="fa fa-chevron-right" aria-hidden="true"></i><p class="title">Software Engineer</p>
+		<!--<i class="fa fa-chevron-right" aria-hidden="true"></i><p class="title">Software Engineer</p>-->
 	</div>
 	<nav>
 		<div id="menu-icon">
@@ -10,7 +11,7 @@
 		<div id="nav">
 			<ul>
 				<li><a class="{% if page.url == '/resume' %}current{% endif %}" href="./resume">RESUME</a></li>
-				<li><a class="{% if page.url == '/portfolio' %}current{% endif %}" href="./portfolio">PORTFOLIO</a></li>
+				<!--<li><a class="{% if page.url == '/portfolio' %}current{% endif %}" href="./portfolio">PORTFOLIO</a></li>-->
 				<li class="last {% if page.url == '/contact' %}current{% endif %}"><a href="./contact">CONTACT</a></li>
 			</ul>
 		</div> 
@@ -18,7 +19,7 @@
 </div> 
 
 <script>
-$(document).ready(function() {
+$( document ).ready(function() {
     $('#menu-icon').on('click', function() {
     	if ($('#nav').css('display') === 'none') {
     		$('#nav').css('display', 'block');
@@ -28,8 +29,8 @@ $(document).ready(function() {
     });
 
     $( window ).resize(function() {
-    	console.log($(document).width());
-    	if ($( document ).width() > 414) {
+    	var width = window.innerWidth || document.body.clientWidth;
+    	if (width > 414) {
    			$('#nav').css('display', 'block');
     	} else {
     		$('#nav').css('display', 'none');
