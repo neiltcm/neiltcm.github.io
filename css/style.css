@@ -254,7 +254,8 @@ p {
 	}
 
 	.skill-section {
-		margin: 0 0 30px 0;
+		min-width: 140px;
+		margin-bottom: 30px;
 	}
 
 	.last-skill {
@@ -266,15 +267,15 @@ p {
 	#container {
 		width: 450px;
 	}
+
+	.skill-section {
+		min-width: 120px;
+	}
 }
 
 @media (max-width: 500px) {
 	#container {
 		width: 415px;
-	}
-
-	.skill-section {
-		min-width: 150px;
 	}
 }
 
@@ -338,5 +339,9 @@ p {
 	.project-thumbnail {
 		width: 270px;
 		height: 180px;
+	}
+
+	.skill-section {
+		min-width: 100px;
 	}
 }
