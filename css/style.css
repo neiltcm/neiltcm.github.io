@@ -24,6 +24,10 @@ p {
 	margin: 10px 0 10px 0;
 }
 
+nav {
+	clear: both;
+}
+
 #footer {
 	margin: 100px 0 30px 0;
 }
@@ -42,7 +46,12 @@ p {
 }
 
 #name {
-	width: 400px;
+	float: left;
+}
+
+#name p {
+	margin: 0;
+	padding: 0;
 }
 
 #name a {
@@ -57,7 +66,7 @@ p {
 #nav {
 	position: absolute;
 	right: 0;
-	bottom: 20px;
+	bottom: 24px;
 	display: block;
 }
 
@@ -268,48 +277,6 @@ p {
 		width: 450px;
 	}
 
-	.skill-section {
-		min-width: 120px;
-	}
-}
-
-@media (max-width: 500px) {
-	#container {
-		width: 415px;
-	}
-}
-
-@media (min-width: 415px) {
-	#nav {
-		display: block;
-	}
-}
-
-@media (max-width: 414px) and (orientation: portrait) {
-	#container {
-		width: 90%;
-	}
-
-	#nav-container {
-		margin: 20px 0 0 0;
-		position: relative;
-	}
-
-	#menu-icon {
-		display: inline-block;
-		position: absolute;
-		right: 0;
-		top: 6%;
-	}
-
-	#name {
-		width: 80%;
-	}
-
-	#name a {
-		font-size: 20px;
-	}
-
 	#nav {
 		display: none;
 		position: relative;
@@ -330,10 +297,52 @@ p {
 		margin: 10px 0 10px 0;
 	}
 
+	#menu-icon {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		top: 6%;
+	}
+
 	.page-title {
 		margin: 10px 0 0 0;
 		font-weight: bold;
 		display: block;
+	}
+
+	.skill-section {
+		min-width: 120px;
+	}
+}
+
+@media (max-width: 500px) {
+	#container {
+		width: 415px;
+	}
+}
+
+@media (min-width: 551px) {
+	#nav {
+		display: block;
+	}
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+	#container {
+		width: 90%;
+	}
+
+	#nav-container {
+		margin: 20px 0 0 0;
+		position: relative;
+	}
+
+	#name {
+		width: 80%;
+	}
+
+	#name a {
+		font-size: 20px;
 	}
 
 	.project-thumbnail {
