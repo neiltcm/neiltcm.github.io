@@ -304,6 +304,20 @@ nav {
 		width: 500px;
 	}
 
+	#name {
+		float: none;
+		text-align: center;
+	}
+
+	#nav {
+		position: static;
+		margin: 10px 0 0 0;
+	}
+
+	#nav ul {
+		text-align: center;
+	}
+
 	.skill-section {
 		min-width: 140px;
 		margin-bottom: 30px;
@@ -317,6 +331,10 @@ nav {
 @media (max-width: 550px) {
 	#container {
 		width: 450px;
+	}
+
+	#name {
+		float: left;
 	}
 
 	#nav {
@@ -389,7 +407,7 @@ nav {
 	}
 
 	#intro {
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 
 	.project-thumbnail {

@@ -8,10 +8,10 @@
 		</div>
 		<div id="nav">
 			<ul>
-				<li><a class="{% if page.url == '/' %}current{% endif %}" href="./">HOME</a></li>
-				<li><a class="{% if page.url == '/resume' %}current{% endif %}" href="./resume">RESUME</a></li>
+				<li><a href="/">HOME</a></li>
+				<li class="{% if page.url == '/resume/' %}current{% endif %}"><a href="/resume/">RESUME</a></li>
 				<!--<li><a class="{% if page.url == '/portfolio' %}current{% endif %}" href="./portfolio">PORTFOLIO</a></li>-->
-				<li class="last {% if page.url == '/contact' %}current{% endif %}"><a href="./contact">CONTACT</a></li>
+				<li class="last{% if page.url == '/contact/' %} current{% endif %}"><a href="/contact/">CONTACT</a></li>
 			</ul>
 		</div> 
 	</nav>
