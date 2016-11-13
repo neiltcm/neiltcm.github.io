@@ -1,6 +1,6 @@
 <div id="nav-container">
 	<div id="name">
-		<p><a href="/">NEIL TSEA CHIN MING</a></p>
+		<span><a href="/">NEIL TSEA CHIN MING</a></span>
 	</div>
 	<nav>
 		<div id="menu-icon">
@@ -8,10 +8,10 @@
 		</div>
 		<div id="nav">
 			<ul>
-				<li><a href="/">HOME</a></li>
-				<li class="{% if page.url == '/resume/' %}current{% endif %}"><a href="/resume/">RESUME</a></li>
-				<!--<li><a class="{% if page.url == '/portfolio' %}current{% endif %}" href="./portfolio">PORTFOLIO</a></li>-->
-				<li class="last{% if page.url == '/contact/' %} current{% endif %}"><a href="/contact/">CONTACT</a></li>
+				<li {% if page.url == '/index.html' %} class="current" {% endif %}><a href="/">HOME</a></li>
+				<li {% if page.url == '/resume/' %} class="current" {% endif %}><a href="/resume/">RESUME</a></li>
+				<li {% if page.url == '/projects/' %} class="current" {% endif %}><a href="/projects/">PROJECTS</a></li>
+				<li {% if page.url == '/contact/' %} class="current" {% endif %}><a href="/contact/">CONTACT</a></li>
 			</ul>
 		</div> 
 	</nav>

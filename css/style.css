@@ -1,20 +1,14 @@
-html, body, div, ul, li, p {
-	margin: 0;
-	padding: 0;
-}
-
 html {
-	font-family: 'Ubuntu', sans-serif;
-	/*font-family: 'Cutive Mono', monospace;*/
+	
 }
 
 body {
 	background: rgb(240, 250, 255);
 	margin: 10px 0 10px 0;
+	font-family: 'Ubuntu', sans-serif !important;
 } 
 
 a {
-	text-decoration: none;
 	color: rgb(0, 0, 0);
 }
 
@@ -22,13 +16,11 @@ li {
 	list-style: none;
 }
 
-p {
-	margin: 10px 0 10px 0;
-}
-
 nav {
 	clear: both;
 }
+
+/* GENERAL */
 
 #footer {
 	margin: 100px 0 30px 0;
@@ -38,6 +30,39 @@ nav {
 	width: 1000px;
 	margin: 0px auto;
 }
+
+.icon-div-inline {
+	display: inline-block;
+}
+
+.page-title {
+	display: none;
+	margin: 10px 0 0 0;
+	font-weight: bold;
+}
+
+.page-content {
+	margin: 30px 0 0 0;
+}
+
+.page-desc {
+	margin: 0 0 30px 0;
+}
+
+.awesome-icon-big {
+	width: 40px;
+	vertical-align: middle;
+}
+
+.page-subheader {
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/**********/
+
+/* NAVIGATION */
 
 #nav-container {
 	width: 100%;
@@ -49,27 +74,13 @@ nav {
 
 #name {
 	float: left;
-}
-
-#name p {
-	margin: 0;
-	padding: 0;
-}
-
-#name a {
 	font-size: 30px;
-}
-
-#name .title {
-	display: inline-block;
-	margin: 10px 0 0 5px;
 }
 
 #nav {
 	position: absolute;
 	right: 0;
 	bottom: 24px;
-	display: block;
 }
 
 #nav ul {
@@ -82,7 +93,7 @@ nav {
 	margin: 0 10px 0 10px;
 }
 
-#nav .last {
+#nav li:last-child {
 	margin-right: 0;
 }
 
@@ -91,8 +102,17 @@ nav {
 }
 
 #nav .current {
-	font-weight: bold;
+	font-size: 16px;
+	font-weight: 900;
 }
+
+#menu-icon {
+	display: none;
+}
+
+/***************/
+
+/* HOME PAGE */
 
 #intro {
 	font-family: 'Cousine', monospace;
@@ -100,15 +120,16 @@ nav {
 
 #intro h1 {
 	margin: 0 0 10px 0;
+	font-size: 20px;
 }
 
-#intro h2 {
-	margin-top: 0;
+#intro-description {
+	margin-top: 30px;
 }
 
 #me p {
 	max-width: 600px;
-	margin-top: 30px;
+	margin-bottom: 30px;
 	line-height: 200%;
 }
 
@@ -120,29 +141,11 @@ nav {
 	color: rgba(0, 0, 0, 0.7);
 }
 
-.page-desc {
-	/*margin: 20px 0 0 0;*/
-}
+/*************/
 
-.project {
-	margin: 0 0 50px 0;
-}
+/* PROJECTS PAGE */
 
-.project-thumbnail {
-	width: 400px;
-	height: 218px;
-	border: 1px solid red;
-	display: inline-block;
-	vertical-align: top;
-}
-
-.desc {
-	margin: 0 0 0 20px;
-	width: 50%;
-	display: inline-block;
-}
-
-#portfolio-footer {
+#project-footer {
 	position: relative;
 }
 
@@ -157,60 +160,38 @@ nav {
 	text-decoration: underline;
 }
 
-.page-content {
-	margin: 30px 0 0 0;
+#projects {
+	padding: 0 0 40px 0;
 }
 
-#phone, #email {
-	margin: 30px 0 0 0;
-	position: relative;
-}
-
-.icon {
-	width: 40px;
-	vertical-align: middle;
-}
-
-#phone span, #email span {
-	position: absolute;
-	top: 20%;
-}
-
-#email a:hover {
+.project-link {
 	text-decoration: underline;
+}
+
+/*****************/
+
+
+/* CONTACT PAGE */
+
+.contact-item {
+	margin-bottom: 20px;
 }
 
 .icon-text {
 	margin-left: 20px;
 }
 
-#menu-icon {
-	display: none;
+#email a:hover {
+	text-decoration: underline;
 }
 
-.page-title {
-	display: none;
-}
+/**************/
 
-.page-subcontent {
-	margin-top: 15px;
-}
 
-.page-subheader {
-	font-size: 19px;
-	font-weight: bold;
-}
+/* RESUME PAGE */
 
-#work p {
+#work li, #work p, #academics p {
 	line-height: 150%;
-}
-
-#work li {
-	line-height: 150%;
-}
-
-#degree > p {
-	margin: 0 0 4px 0;
 }
 
 #resume-container section {
@@ -219,20 +200,28 @@ nav {
 	margin: 40px 0;
 }
 
-#academics .last {
-	margin-bottom: 0;
-}
-
-.icon-div-inline {
-	display: inline-block;
+#resume-container section:first-child {
+	margin: 0;
 }
 
 #courses li {
-	margin-bottom: 7px;
+	padding: 5px 0;
 }
 
 .work-experience {
-	margin: 10px 0 40px 0;
+	margin: 0 0 30px 0;
+}
+
+.work-experience:last-child {
+	margin: 0;
+}
+
+.job-title {
+	margin: 10px 0;
+}
+
+.list-point {
+	width: 30px;
 }
 
 #pdf-version {
@@ -254,21 +243,17 @@ nav {
 }
 
 .skill-section li {
-	margin: 4px 0 4px 0;
+	padding: 4px 0;
 }
 
 .skill-section > header {
+	font-size: 17px;
 	font-weight: bold;
 	margin: 0 0 10px 0;
 }
 
-#me section, #resume-container section, #contact-container section {
-	/*padding: 20px;
-	margin: 0 0 20px 0;
-	-moz-box-shadow: 0px 1px 2px 0px;
-    -webkit-box-shadow: 0px 1px 2px 0px;
-	background: rgb(255, 255, 255);*/
-}
+/*************/
+
 
 /*********** MEDIA QUERIES ***********/
 
@@ -292,16 +277,6 @@ nav {
 		width: 90%;
 	}
 
-	.skill-section {
-		min-width: 170px;
-	}
-}
-
-@media (max-width: 650px) {
-	#container {
-		width: 500px;
-	}
-
 	#name {
 		float: none;
 		text-align: center;
@@ -314,6 +289,16 @@ nav {
 
 	#nav ul {
 		text-align: center;
+	}
+
+	.skill-section {
+		min-width: 170px;
+	}
+}
+
+@media (max-width: 650px) {
+	#container {
+		width: 500px;
 	}
 
 	.skill-section {
@@ -364,8 +349,6 @@ nav {
 	}
 
 	.page-title {
-		margin: 10px 0 0 0;
-		font-weight: bold;
 		display: block;
 	}
 
@@ -408,11 +391,6 @@ nav {
 
 	#intro {
 		font-size: 0.7em;
-	}
-
-	.project-thumbnail {
-		width: 270px;
-		height: 180px;
 	}
 
 	.skill-section {
