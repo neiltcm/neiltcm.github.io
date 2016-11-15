@@ -1,15 +1,13 @@
-html {
-	
-}
-
 body {
-	background: rgb(240, 250, 255);
+	background: rgb(255, 255, 255);
+	font-size: 16px;
 	margin: 10px 0 10px 0;
-	font-family: 'Ubuntu', sans-serif !important;
+	font-family: 'Lato', sans-serif !important;
 } 
 
 a {
-	color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0) !important;
+	text-decoration: none !important;
 }
 
 li {
@@ -80,12 +78,13 @@ nav {
 #nav {
 	position: absolute;
 	right: 0;
-	bottom: 24px;
+	bottom: 18px;
 }
 
 #nav ul {
 	text-align: right;
 	font-size: 14px;
+	z-index: 2;
 }
 
 #nav li {
@@ -102,8 +101,7 @@ nav {
 }
 
 #nav .current {
-	font-size: 16px;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 #menu-icon {
@@ -123,12 +121,16 @@ nav {
 	font-size: 20px;
 }
 
+#intro h2 {
+	font-size: 19px;
+}
+
 #intro-description {
 	margin-top: 30px;
+	max-width: 800px;
 }
 
 #me p {
-	max-width: 600px;
 	margin-bottom: 30px;
 	line-height: 200%;
 }
@@ -157,15 +159,11 @@ nav {
 }
 
 #github-link a {
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 
 #projects {
 	padding: 0 0 40px 0;
-}
-
-.project-link {
-	text-decoration: underline;
 }
 
 /*****************/
@@ -256,6 +254,14 @@ nav {
 
 
 /*********** MEDIA QUERIES ***********/
+
+/* ----------- Non-Retina Screens ----------- */
+@media (min-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  	body {
+  		font-size: 17px;
+  	}
+}
 
 @media (max-width: 1050px) {
 	#container {

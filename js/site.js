@@ -12,6 +12,7 @@
 
 /* Make project thumbnails and images inside them the same height */
 $(window).on("load", function() {
-	$('#projects').find('.thumbnail').uniformHeight();
 	$('#projects').find('img').uniformHeight();
+	$('#projects').find('.project-desc').uniformHeight();
+	$('#projects').find('.thumbnail').uniformHeight();
 });
