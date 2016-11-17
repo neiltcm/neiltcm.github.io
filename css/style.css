@@ -166,6 +166,10 @@ nav {
 	padding: 0 0 40px 0;
 }
 
+#projects .thumbnail {
+	background: rgb(245, 245, 245);
+}
+
 /*****************/
 
 
